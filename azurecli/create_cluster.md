@@ -29,7 +29,7 @@
 **Test-Image**   
 ```az acr run --registry aksndr2024 --cmd '$Registry/sample/hello-world:v1' /dev/null --resource-group aks-training```   
 **Further example**   
-```git clone https://github.com/chadmcrowell/aks-node-docker.git```
+```git clone https://github.com/chadmcrowell/aks-node-docker.git```   
 ```az acr build --registry aksndr2024 --image node:v1 . --resource-group aks-training```
 
 
@@ -76,5 +76,5 @@ Edit svc.yaml and add Loadbalancer under spec:
 
 ### Tear Down
 
-```az group delete --name aks-training --yes```
+```az group delete --name aks-training --yes```   
 ```az group delete --name DefaultResourceGroup-SUK --yes```
